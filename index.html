@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <div id="app" class="container shadow" style="height: 100vh;">
+        <div class="mx-auto text-center" style="width: 50vw;">
+            <div id="header">
+                <h1>Typing Game</h1>
+                <p class="text-primary">Type as many words as you can until time runs out!</p>
+            </div>
+
+            <div>
+                <button id="game-btn" class="btn btn-danger btn-lg shadow mt-5">Start</button>
+            </div>
+        </div>
+
+        <div id="score-dashboard" class="d-flex justify-content-around mt-5 text-danger">
+            <div class="text-center">
+                <h1>Score</h1>
+                <p class="fs-1"></p>
+            </div>
+            <div class="text-center">
+                <h1>Time left</h1>
+                <p class="fs-1"></p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5 fs-1">
+            <span id="game-word"></span>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5 fs-1">
+            <span id="typed-word"></span>
+        </div>
+    </div>
+</body>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/js.js"></script>
+</html>
