@@ -92,16 +92,16 @@ const words = [
 ];
 
 $(document).ready(function() {
-	let score = 0;
-	let timeLeft = 60;
+	let score
+	let timeLeft
 	let timer;
-	let currentTypedWord = '';
-	let incorrectCount = 0;
-	let isGameRunning = false;
+	let currentTypedWord
+	let incorrectCount
+	let isGameRunning
 
 	function startGame() {
 		score = 0;
-		timeLeft = 60;
+		timeLeft = 5;
 		currentTypedWord = '';
 		incorrectCount = 0;
 		isGameRunning = true;
@@ -120,6 +120,7 @@ $(document).ready(function() {
 			clearInterval(timer);
 			$('#game-btn').prop('disabled', false);
 			alert('Game Over! Your score is ' + score);
+			isGameRunning = false;
 		}
 	}
 
